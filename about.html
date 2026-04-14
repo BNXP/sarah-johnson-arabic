@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Sarah - Licensed Medical Consultant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .about-section {
+            padding: 3rem 0;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .about-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--gray-800);
+        }
+
+        .sarah-profile {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2.5rem;
+            align-items: start;
+        }
+
+        .profile-image {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .profile-info h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-title {
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+        }
+
+        .profile-divider {
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            margin: 1rem 0;
+        }
+
+        .profile-info p {
+            color: var(--gray-600);
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .qualification-list {
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        .qual-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .qual-icon {
+            font-size: 1.5rem;
+        }
+
+        .qual-item h4 {
+            font-size: 1rem;
+            color: var(--gray-800);
+            margin-bottom: 0.25rem;
+        }
+
+        .qual-item p {
+            color: var(--gray-500);
+            font-size: 0.9rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .feature-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .feature-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .feature-item h3 {
+            font-size: 1.1rem;
+            color: var(--gray-800);
+        }
+
+        .feature-item p {
+            font-size: 0.9rem;
+            color: var(--gray-500);
+        }
+
+        .work-image, .team-photo {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .work-image img, .team-photo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .team-photo {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+        }
+
+        .contact-card h2 {
+            color: white;
+        }
+
+        .contact-card > p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info-large {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255,255,255,0.15);
+            padding: 1.25rem;
+            border-radius: var(--radius);
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+        }
+
+        .contact-label {
+            display: block;
+            font-size: 0.8rem;
+            opacity: 0.8;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-value {
+            display: block;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .sarah-profile {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-image {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info-large {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Trust Bar -->
+    <div class="trust-bar">
+        <div class="container">
+            <span>✓ <span data-i18n="trust_licensed">Licensed Medical Professional</span></span>
+            <span>✓ <span data-i18n="trust_personalized">Personalized Treatment</span></span>
+            <span>✓ <span data-i18n="trust_confidential">100% Confidential</span></span>
+            <span>✓ <span data-i18n="trust_support">Full Support</span></span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">👩‍⚕️</span>
+                <span data-i18n="sarah_name">Sarah Johnson</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-i18n="nav_home">Success Stories</a>
+                <a href="about.html" class="active" data-i18n="nav_about">About Sarah</a>
+                <div class="lang-switcher">
+                    <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+                    <button class="lang-btn" data-lang="ar" onclick="setLanguage('ar')">AR</button>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" data-i18n="nav_home">Success Stories</a>
+        <a href="about.html" data-i18n="nav_about">About Sarah</a>
+        <div style="padding: 0.75rem 1rem;">
+            <button class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn" data-lang="ar" onclick="setLanguage('ar')">AR</button>
+        </div>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-i18n="about_title">About Sarah Johnson</h1>
+            <p data-i18n="about_subtitle">Licensed professional helping men reclaim their confidence</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <!-- Personal Intro -->
+                <div class="about-card sarah-profile">
+                    <div class="profile-image">
+                        <img src="sarah.jpg" alt="Sarah Johnson" onerror="this.style.display='none'">
+                    </div>
+                    <div class="profile-info">
+                        <h2 data-i18n="sarah_name">Sarah Johnson</h2>
+                        <p class="profile-title" data-i18n="sarah_title">Licensed Medical Consultant | Men's Health Specialist</p>
+                        <div class="profile-divider"></div>
+                        <p data-i18n="about_intro1">I'm Sarah Johnson, and for over a decade, I've dedicated my career to helping men overcome erectile dysfunction and reclaim their confidence. I understand how deeply this issue affects not just your physical health, but your relationships, self-esteem, and overall quality of life.</p>
+                        <p data-i18n="about_intro2">What sets my practice apart is personalized care. I don't believe in one-size-fits-all solutions. Every man who reaches out to me receives individual attention, a thorough assessment, and a customized treatment plan designed specifically for his body, lifestyle, and goals.</p>
+                        <p data-i18n="about_intro3">My mission is simple: to help you get your life back. No judgment, no embarrassment—just professional medical care that works.</p>
+                    </div>
+                </div>
+
+                <!-- Qualifications -->
+                <div class="about-card">
+                    <h2 data-i18n="qual_title">🎓 Qualifications & Credentials</h2>
+                    <div class="qualification-list">
+                        <div class="qual-item">
+                            <span class="qual-icon">📜</span>
+                            <div>
+                                <h4 data-i18n="qual1_title">Master's Degree in Medicine</h4>
+                                <p data-i18n="qual1_desc">Graduated from a top-tier medical school with specialization in men's health</p>
+                            </div>
+                        </div>
+                        <div class="qual-item">
+                            <span class="qual-icon">🏆</span>
+                            <div>
+                                <h4 data-i18n="qual2_title">Board Certified</h4>
+                                <p data-i18n="qual2_desc">Licensed medical professional with certifications in sexual health</p>
+                            </div>
+                        </div>
+                        <div class="qual-item">
+                            <span class="qual-icon">📚</span>
+                            <div>
+                                <h4 data-i18n="qual3_title">Continuing Education</h4>
+                                <p data-i18n="qual3_desc">Regular attendance at international medical conferences to stay current</p>
+                            </div>
+                        </div>
+                        <div class="qual-item">
+                            <span class="qual-icon">⭐</span>
+                            <div>
+                                <h4 data-i18n="qual4_title">10+ Years Experience</h4>
+                                <p data-i18n="qual4_desc">Over 5,000 men helped with a 99% satisfaction rate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Philosophy -->
+                <div class="about-card">
+                    <h2 data-i18n="approach_title">💡 My Approach</h2>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">1</div>
+                            <h3 data-i18n="approach1_title">Personalized Care</h3>
+                            <p data-i18n="approach1_desc">No two men are alike. Every treatment plan is tailored to your unique needs and health profile.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">2</div>
+                            <h3 data-i18n="approach2_title">Full Support</h3>
+                            <p data-i18n="approach2_desc">I'm with you every step of the way. Regular check-ins, adjustments, and unlimited questions.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">3</div>
+                            <h3 data-i18n="approach3_title">Total Confidentiality</h3>
+                            <p data-i18n="approach3_desc">Your privacy is sacred. All consultations are 100% confidential with discreet communication.</p>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">4</div>
+                            <h3 data-i18n="approach4_title">Results Focused</h3>
+                            <p data-i18n="approach4_desc">I only recommend what actually works. No gimmicks, no overpriced placebos—just proven solutions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Work Environment -->
+                <div class="about-card">
+                    <h2 data-i18n="clinic_title">🏥 Our Clinic</h2>
+                    <div class="work-image">
+                        <img src="work.jpg" alt="Sarah at work" onerror="this.style.display='none'">
+                    </div>
+                    <p style="margin-top: 1rem; color: var(--gray-600);" data-i18n="clinic_desc">
+                        Our professional medical facility meets the highest standards of cleanliness, safety, and patient comfort. Every procedure follows strict medical protocols.
+                    </p>
+                </div>
+
+                <!-- Team -->
+                <div class="about-card">
+                    <h2 data-i18n="about_team_title">👥 Our Team</h2>
+                    <div class="team-photo">
+                        <img src="team.jpg" alt="Our medical team" onerror="this.style.display='none'">
+                    </div>
+                    <p style="margin-top: 1.5rem; color: var(--gray-600); text-align: center;" data-i18n="about_team_desc">
+                        A dedicated team of medical professionals committed to helping men reclaim their confidence and vitality.
+                    </p>
+                </div>
+
+                <!-- Contact -->
+                <div class="about-card contact-card">
+                    <h2 data-i18n="contact_title">📞 Contact Me</h2>
+                    <p data-i18n="contact_desc">Ready to start your journey? Reach out today for a confidential consultation.</p>
+                    <div class="contact-info-large">
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <span class="contact-label" data-i18n="contact_whatsapp">WhatsApp</span>
+                                <span class="contact-value">XXXXXXX</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">⏰</span>
+                            <div>
+                                <span class="contact-label" data-i18n="contact_hours">Hours</span>
+                                <span class="contact-value">9AM - 10PM EST</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🌍</span>
+                            <div>
+                                <span class="contact-label" data-i18n="contact_area">Service Area</span>
+                                <span class="contact-value" data-i18n="contact_nationwide">Nationwide</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="sarah_name">Sarah Johnson</h3>
+                    <p><span data-i18n="footer_tagline">Helping men reclaim their confidence and vitality</span><br><span data-i18n="footer_stories">Over 5,000 success stories and counting</span></p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_contact">Contact</h4>
+                    <p>📱 <span data-i18n="footer_whatsapp">WhatsApp: XXXXXXX</span></p>
+                    <p>⏰ <span data-i18n="footer_hours">Hours: 9AM - 10PM EST</span></p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_promise">Our Promise</h4>
+                    <p>✓ <span data-i18n="trust_licensed">Licensed Professional</span><br>✓ <span data-i18n="trust_confidential">100% Confidential</span><br>✓ <span data-i18n="trust_personalized">Personalized Care</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer_copy">© 2024 Sarah Johnson | All stories shared with permission | Individual results may vary</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
