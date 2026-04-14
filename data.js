@@ -18,7 +18,7 @@ const arabAvatars = [
     "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=120&h=120&fit=crop&crop=face",
     "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=120&h=120&fit=crop&crop=face",
     "https://images.unsplash.com/photo-1542178243-bc20204b769f?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1508213233860-3d7b990c615f?w=120&h=120&fit=crop&crop=face",
+    "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=120&h=120&fit=crop&crop=face",
     "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=120&h=120&fit=crop&crop=face"
 ];
 
