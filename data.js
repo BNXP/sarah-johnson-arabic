@@ -1,19 +1,19 @@
-// Reliable Unsplash avatar pool for Arab-looking male portraits
+// Stable randomuser.me avatars for Arab/Middle-Eastern looking male portraits
 const arabAvatars = [
-    "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1542596594-649edbc13630?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1504257432389-52343af06ae3?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1573007974656-b958089e9f7b?w=100&h=100&fit=crop&crop=face"
+    "https://randomuser.me/api/portraits/men/32.jpg",
+    "https://randomuser.me/api/portraits/men/33.jpg",
+    "https://randomuser.me/api/portraits/men/34.jpg",
+    "https://randomuser.me/api/portraits/men/35.jpg",
+    "https://randomuser.me/api/portraits/men/36.jpg",
+    "https://randomuser.me/api/portraits/men/37.jpg",
+    "https://randomuser.me/api/portraits/men/38.jpg",
+    "https://randomuser.me/api/portraits/men/39.jpg",
+    "https://randomuser.me/api/portraits/men/40.jpg",
+    "https://randomuser.me/api/portraits/men/41.jpg"
 ];
 
 function getAvatar(index) {
-    return arabAvatars[index % arabAvatars.length] + "&v=4";
+    return arabAvatars[index % arabAvatars.length];
 }
 
 // English Reviews - Middle East focused
