@@ -43,6 +43,9 @@ const translations = {
         'cod_feat5': '24/7 WhatsApp support',
         'cod_feat6': 'Full confidentiality guaranteed',
         'cod_btn': 'Order Now via WhatsApp',
+        'cod_badge1': 'Confidential Shipping',
+        'cod_badge2': 'Home Delivery',
+        'cod_badge3': 'Cash on Delivery',
         // Reviews
         'reviews_title': 'Real Men Share Their Journey',
         'reviews_desc': 'These are authentic stories from men who worked with me to overcome their challenges',
@@ -148,6 +151,10 @@ const translations = {
         'cod_feat4': 'ادفع فقط عند الاستلام',
         'cod_feat5': 'دعم واتساب 24/7',
         'cod_feat6': 'سرية تامة مضمونة',
+        'cod_btn': 'اطلب الآن عبر الواتساب',
+        'cod_badge1': '保密发货',
+        'cod_badge2': '送货上门',
+        'cod_badge3': '货到付款',
         // Reviews
         'reviews_title': 'رجال حقيقيون يشاركون رحلتهم',
         'reviews_desc': 'هذه قصص حقيقية من رجال عملوا معي للتغلب على تحدياتهم',

@@ -1,19 +1,18 @@
-// Arab-looking avatar pool from Unsplash
-const arabAvatars = [
-    "https://images.unsplash.com/photo-1542596594-649edbc13630?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1504257432389-52343af06ae3?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=100&h=100&fit=crop&crop=face"
-];
-
+// Generate consistent Arab-looking avatar URLs using avatar service
 function getAvatar(index) {
-    return arabAvatars[index % arabAvatars.length];
+    const seeds = [
+        "omar_alfarsi",
+        "mohammed_rashid",
+        "khalid_sayed",
+        "ahmed_hassan",
+        "yusuf_ibrahim",
+        "abdullah_otaibi",
+        "tariq_nasser",
+        "sami_qahtani",
+        "fahd_mutairi",
+        "nasser_dosari"
+    ];
+    return `https://avatar.iran.liara.run/public/boy?username=${seeds[index % seeds.length]}`;
 }
 
 // English Reviews - Middle East focused
