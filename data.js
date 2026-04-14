@@ -1,4 +1,4 @@
-// Stable randomuser.me avatars for Arab/Middle-Eastern looking male portraits
+// 20 distinct stable randomuser.me portraits – each reviewer gets a unique face
 const arabAvatars = [
     "https://randomuser.me/api/portraits/men/32.jpg",
     "https://randomuser.me/api/portraits/men/33.jpg",
@@ -9,11 +9,21 @@ const arabAvatars = [
     "https://randomuser.me/api/portraits/men/38.jpg",
     "https://randomuser.me/api/portraits/men/39.jpg",
     "https://randomuser.me/api/portraits/men/40.jpg",
-    "https://randomuser.me/api/portraits/men/41.jpg"
+    "https://randomuser.me/api/portraits/men/41.jpg",
+    "https://randomuser.me/api/portraits/men/42.jpg",
+    "https://randomuser.me/api/portraits/men/43.jpg",
+    "https://randomuser.me/api/portraits/men/44.jpg",
+    "https://randomuser.me/api/portraits/men/45.jpg",
+    "https://randomuser.me/api/portraits/men/46.jpg",
+    "https://randomuser.me/api/portraits/men/47.jpg",
+    "https://randomuser.me/api/portraits/men/48.jpg",
+    "https://randomuser.me/api/portraits/men/49.jpg",
+    "https://randomuser.me/api/portraits/men/50.jpg",
+    "https://randomuser.me/api/portraits/men/51.jpg"
 ];
 
 function getAvatar(index) {
-    return arabAvatars[index % arabAvatars.length];
+    return arabAvatars[index];
 }
 
 // English Reviews - Middle East focused
