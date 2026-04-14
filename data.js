@@ -1,25 +1,25 @@
-// 20 completely distinct portrait URLs – each reviewer gets a unique face
+// 20 distinct guaranteed-male portrait URLs from randomuser.me
 const arabAvatars = [
-    "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1504257432389-52343af06ae3?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1542596594-649edbc13630?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1573007974656-b958089e9f7b?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1463453091185-61582044d556?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1542178243-bc20204b769f?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=120&h=120&fit=crop&crop=face",
-    "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=120&h=120&fit=crop&crop=face"
+    "https://randomuser.me/api/portraits/men/32.jpg",
+    "https://randomuser.me/api/portraits/men/33.jpg",
+    "https://randomuser.me/api/portraits/men/34.jpg",
+    "https://randomuser.me/api/portraits/men/35.jpg",
+    "https://randomuser.me/api/portraits/men/36.jpg",
+    "https://randomuser.me/api/portraits/men/37.jpg",
+    "https://randomuser.me/api/portraits/men/38.jpg",
+    "https://randomuser.me/api/portraits/men/39.jpg",
+    "https://randomuser.me/api/portraits/men/40.jpg",
+    "https://randomuser.me/api/portraits/men/41.jpg",
+    "https://randomuser.me/api/portraits/men/42.jpg",
+    "https://randomuser.me/api/portraits/men/43.jpg",
+    "https://randomuser.me/api/portraits/men/44.jpg",
+    "https://randomuser.me/api/portraits/men/45.jpg",
+    "https://randomuser.me/api/portraits/men/46.jpg",
+    "https://randomuser.me/api/portraits/men/47.jpg",
+    "https://randomuser.me/api/portraits/men/48.jpg",
+    "https://randomuser.me/api/portraits/men/49.jpg",
+    "https://randomuser.me/api/portraits/men/50.jpg",
+    "https://randomuser.me/api/portraits/men/51.jpg"
 ];
 
 function getAvatar(index) {
