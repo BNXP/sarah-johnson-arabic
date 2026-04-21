@@ -227,8 +227,8 @@ let currentLang = localStorage.getItem('siteLang') || 'en';
 
 function getBrowserLang() {
     const navLang = navigator.language || navigator.userLanguage;
-    if (navLang && navLang.startsWith('ar')) return 'ar';
-    return 'en';
+    if (navLang && navLang.startsWith('en')) return 'en';
+    return 'ar';
 }
 
 async function detectCountryLang() {
@@ -289,8 +289,8 @@ function applyLanguage(lang) {
 }
 
 function getTranslation(key, lang) {
-    const dict = translations[lang] || translations.en;
-    return dict[key] || translations.en[key] || key;
+    const dict = translations[lang] || translations.ar;
+    return dict[key] || translations.ar[key] || key;
 }
 
 function setLanguage(lang) {
